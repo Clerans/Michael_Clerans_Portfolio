@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { GraduationCap, School, Award, Calendar } from "lucide-react";
+import { GraduationCap, School, Award, Calendar, BookOpen } from "lucide-react";
 
 const educationData = [
   {
@@ -11,6 +11,16 @@ const educationData = [
       "Currently pursuing an Honours degree with a focus on full-stack development, mobile computing, and network systems. Building a strong foundation in modern software engineering practices.",
     icon: GraduationCap,
     color: "from-blue-500 to-cyan-500",
+  },
+  {
+    title: "Collaborative Filtering using SVD for Movie Recommendations",
+    specialization: "Research Publication",
+    institution: "Horizon Interdisciplinary Research Symposium (HIRS) 2025",
+    period: "Nov 2025",
+    description:
+      "Co-authored and presented a peer-reviewed research paper on an SVD-based movie recommendation system. Trained on MovieLens 100K dataset achieving RMSE of 0.91 using Python and Surprise library.",
+    icon: BookOpen,
+    color: "from-emerald-500 to-teal-500",
   },
   {
     title: "G.C.E. Advanced Level",
@@ -49,9 +59,9 @@ export function Education() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="mb-4 text-gradient">Education & Qualifications</h2>
+          <h2 className="mb-4 text-gradient">Education, Research & Qualifications</h2>
           <p className="text-slate-400 max-w-2xl mx-auto">
-            My academic journey and professional certifications
+            My academic journey, research contributions, and professional certifications
           </p>
         </motion.div>
 
