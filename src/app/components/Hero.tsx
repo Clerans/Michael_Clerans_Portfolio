@@ -55,14 +55,16 @@ export function Hero() {
           >
             <Sparkles className="w-4 h-4 text-cyan-400" />
             <span className="text-sm text-slate-300">
-              BIT (Hons) Undergraduate • Open to opportunities
+              BIT (Hons) Undergraduate • Open to Internships
             </span>
           </motion.div>
 
           {/* Name */}
-          <h1 className="mb-6 text-5xl md:text-7xl lg:text-8xl">
+          <h1 className="mb-6 text-4xl sm:text-5xl md:text-7xl lg:text-8xl whitespace-nowrap">
             Hi, I’m <span className="text-gradient">Michael Clerans</span>
           </h1>
+
+
 
           {/* Role */}
           <motion.div

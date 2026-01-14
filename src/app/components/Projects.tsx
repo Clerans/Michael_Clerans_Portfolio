@@ -14,8 +14,9 @@ import { motion } from "motion/react";
 const projects = [
   {
     title: "MegaShop Mobile App",
+    badge: "Featured • Full-Stack",
     description:
-      "A full-stack mobile e-commerce application with secure JWT authentication, product browsing, cart management, and a complete RESTful backend.",
+      "A full-stack mobile e-commerce application where I implemented JWT authentication, RESTful APIs, product browsing, cart management, and PostgreSQL database integration. (Academic Project)",
     image:
       "https://images.unsplash.com/photo-1555421689-d68471e189f2?auto=format&fit=crop&w=1080&q=80",
     tags: ["React Native", "Node.js", "Express", "PostgreSQL"],
@@ -25,8 +26,9 @@ const projects = [
   },
   {
     title: "MC Mobiles App",
+    badge: "Featured • Mobile + Backend",
     description:
-      "A React Native mobile shop application for buying and selling devices, featuring a responsive UI and secure Node.js backend integration.",
+      "A React Native mobile shop application for buying and selling devices, with backend API integration using Node.js and MongoDB, focusing on secure data handling and responsive UI design. (Personal Project)",
     image:
       "https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?auto=format&fit=crop&w=1080&q=80",
     tags: ["React Native", "Node.js", "MongoDB"],
@@ -36,8 +38,9 @@ const projects = [
   },
   {
     title: "MC Mobiles Website",
+    badge: "Frontend Project",
     description:
-      "A responsive e-commerce platform built with React, featuring dynamic product filtering, search functionality, and mobile-first design.",
+      "A responsive e-commerce website built with React, featuring dynamic product filtering, search functionality, and a mobile-first user interface. (Freelance Project)",
     image:
       "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1080&q=80",
     tags: ["React.js", "JavaScript", "CSS"],
@@ -47,8 +50,9 @@ const projects = [
   },
   {
     title: "Global Country Insights",
+    badge: "API Integration",
     description:
-      "Collaborative dashboard displaying real-time country data, weather, and COVID-19 statistics using multiple public REST APIs and Chart.js.",
+      "Collaborative dashboard displaying real-time country data, weather information, and COVID-19 statistics using multiple public REST APIs and data visualization techniques. (Group Project)",
     image:
       "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=1080&q=80",
     tags: ["HTML", "CSS", "JavaScript", "REST APIs"],
@@ -59,7 +63,7 @@ const projects = [
   {
     title: "Weather Web Application",
     description:
-      "Dynamic weather application providing real-time updates on temperature, humidity, and wind speed through public API integration.",
+      "Dynamic weather web application providing real-time updates on temperature, humidity, and wind speed through public API integration. (Personal Project)",
     image:
       "https://images.unsplash.com/photo-1592210454359-9043f067919b?auto=format&fit=crop&w=1080&q=80",
     tags: ["HTML", "CSS", "JavaScript", "Weather API"],
@@ -70,7 +74,7 @@ const projects = [
   {
     title: "GPA Calculator App",
     description:
-      "A cross-platform Flutter application for calculating university GPA with subject input validation and an intuitive student-focused UI.",
+      "Cross-platform Flutter application for calculating university GPA with subject input validation and a clean, student-focused user interface. (Academic Project)",
     image:
       "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1080&q=80",
     tags: ["Flutter", "Dart"],
@@ -81,7 +85,7 @@ const projects = [
   {
     title: "Library Management System",
     description:
-      "Java-based desktop application for complete library operations including book inventory, issuing, and returns with MySQL database integration.",
+      "Java-based desktop application for managing library operations including book inventory, issuing, and returns with MySQL database integration. (Academic Project)",
     image:
       "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=1080&q=80",
     tags: ["Java", "JavaFX", "MySQL"],
@@ -92,7 +96,7 @@ const projects = [
   {
     title: "Student Grading System",
     description:
-      "C-based console application for efficient student grade management, mark entry, and result calculation using core programming concepts.",
+      "C-based console application for managing student grades, mark entry, and result calculation using core programming concepts. (Academic Project)",
     image:
       "https://images.unsplash.com/photo-1555099962-4199c345e5dd?auto=format&fit=crop&w=1080&q=80",
     tags: ["C", "VS Code"],
@@ -137,16 +141,21 @@ export function Projects() {
                 <div className="relative h-48 overflow-hidden">
                   <div
                     className={`absolute inset-0 bg-gradient-to-br ${project.color} opacity-20 group-hover:opacity-30 transition-opacity`}
-                  ></div>
+                  />
                   <ImageWithFallback
                     src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-60"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-60" />
                 </div>
 
                 <CardHeader>
+                  {project.badge && (
+                    <span className="mb-1 text-xs text-cyan-400">
+                      {project.badge}
+                    </span>
+                  )}
                   <CardTitle className="text-white group-hover:text-gradient transition-all">
                     {project.title}
                   </CardTitle>
