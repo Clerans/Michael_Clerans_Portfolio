@@ -18,16 +18,16 @@ const skillCategories = [
   },
   {
     icon: Database,
-    title: "Backend & API Development",
-    description: "Building server-side logic and integrating RESTful services",
-    skills: ["Node.js", "RESTful APIs", "Firebase Authentication"],
+    title: "Backend & Core",
+    description: "Server-side logic, APIs, and system programming",
+    skills: ["Node.js", "Express.js", "Java", "C", "RESTful APIs"],
     color: "from-purple-500 to-pink-500",
   },
   {
     icon: Smartphone,
-    title: "Mobile Application Development",
-    description: "Developing cross-platform and native mobile applications",
-    skills: ["React Native", "Expo", "Android (Java, Kotlin)"],
+    title: "Mobile App Development",
+    description: "Building cross-platform and native mobile applications",
+    skills: ["React Native", "Expo", "Flutter", "Dart", "Android"],
     color: "from-cyan-500 to-blue-500",
   },
   {
@@ -40,8 +40,8 @@ const skillCategories = [
   {
     icon: Cloud,
     title: "Cloud & Deployment",
-    description: "Working with basic cloud services and application deployment",
-    skills: ["AWS"],
+    description: "Working with cloud services and application deployment",
+    skills: ["AWS", "Firebase"],
     color: "from-green-500 to-emerald-500",
   },
   {
