@@ -60,8 +60,8 @@ export function Hero() {
           </motion.div>
 
           {/* Name */}
-          <h1 className="mb-6 text-4xl sm:text-5xl md:text-7xl lg:text-8xl whitespace-nowrap">
-            Hi, I’m <span className="text-gradient">Michael Clerans</span>
+          <h1 className="mb-6 text-4xl sm:text-5xl md:text-7xl lg:text-8xl">
+            Hi, I’m <span className="text-gradient whitespace-nowrap">Michael Clerans</span>
           </h1>
 
 
